@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="571c69f0-8640-4f30-b804-cca4c6ea5d65" name="UMLClassDiagram.temp" linkedPackageId="76fedc02-e4b4-41c0-8c62-81c8cbfef65b" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="90feb6d9-6b04-48db-9631-96498d673f70" name="Manager " isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c6967c0b-28b3-45ec-aa37-38ee704b3972" />
+        <generalsInternal>
+          <generalization Id="4cffc6c3-48ae-4595-89f3-14999e0f4066" isSubstitutable="false">
+            <classMoniker Id="a5ebdde6-db98-4e33-9483-90edf45e064d" LastKnownName="&lt;&lt;abstract&gt;&gt;Employee " />
+            <elementDefinition Id="d5072587-b9e8-46f3-bd03-9376806d6bef" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="23f8d96c-1c7b-489b-8a6b-e8c480efd844" name="employeeSubject" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e37e20a0-0038-4b03-9bb6-943d352544d2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d2f3d99-3f88-4a74-98e4-15c518dca3d2" LastKnownName="EmployeeSubject" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a8d11ee1-869e-4fbe-8bfe-f711f7e19d1b" name="calculateSalary" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b11ae7a4-ace9-419f-baea-7c3b0e33f146" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b39f4256-03c3-4d91-8cee-e5b76ebd09ab" name="HR " isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fee28843-6070-4d13-87c0-75ec3f1303ff" />
+        <generalsInternal>
+          <generalization Id="fea683eb-4c75-4cf0-a3ed-17bfb4b59172" isSubstitutable="false">
+            <classMoniker Id="a5ebdde6-db98-4e33-9483-90edf45e064d" LastKnownName="&lt;&lt;abstract&gt;&gt;Employee " />
+            <elementDefinition Id="b77a044e-1b5a-4f61-9a3e-077b16dfc36e" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="d225dede-956a-46a1-8115-ddecc6945157" name="employeeSubject" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8805396e-8831-4e8f-b10d-af1f104633d1" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d2f3d99-3f88-4a74-98e4-15c518dca3d2" LastKnownName="EmployeeSubject" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5a9fed8c-98fd-4614-9f22-9fd2457e395e" name="calculateSalary" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="06934728-a0cc-431e-9f78-1a4eb6077543" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="b2f54a3a-4414-43c9-b979-f5444192f65c" name="CustomerService " isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="223ca244-8f99-48d5-bfb8-f80a3bbaca50" />
+        <generalsInternal>
+          <generalization Id="2e3629b1-7bef-4cb4-bf83-69c9698aa8c2" isSubstitutable="false">
+            <classMoniker Id="a5ebdde6-db98-4e33-9483-90edf45e064d" LastKnownName="&lt;&lt;abstract&gt;&gt;Employee " />
+            <elementDefinition Id="5bb0a529-cc08-47ab-84f6-71bb125383fc" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="14e52d9e-e263-4928-9944-8d8d83c80dba" name="employeeSubject" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4727bad6-972e-48eb-a5cb-7c4fdd8f08e3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d2f3d99-3f88-4a74-98e4-15c518dca3d2" LastKnownName="EmployeeSubject" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3f431cf7-72de-4135-91f3-dcfbf2192c54" name="calculateSalary" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0a966e70-0691-4ffd-b545-35e75b0b5b68" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a5ebdde6-db98-4e33-9483-90edf45e064d" name="&lt;&lt;abstract&gt;&gt;Employee " isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5a0fb479-0be4-4a8b-af52-f95c1985c240" />
+        <ownedAttributesInternal>
+          <property Id="368f4828-4ded-4309-8e3a-9f1c2c9df481" name="employeeSubject" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6e40c175-3ffb-4dba-b83d-1bf1319b5f80" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2d2f3d99-3f88-4a74-98e4-15c518dca3d2" LastKnownName="EmployeeSubject" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8448cb6a-8644-4b04-8e4f-2db3fed34a8e" name="calculateSalary" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a6333404-b3b3-407b-a3fc-73efe863c3bf" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3c3cc756-e4e2-41cf-8f04-3272c34b97fc" name="&lt;&lt;abstract&gt;&gt; EmployeeSubject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e75da91d-f68a-4a1f-a513-9f12bf328074" />
+        <targetEnds>
+          <association Id="d7d6bac8-e898-468e-a53f-0267900a697c" isDerived="false" sourceEndRoleName="Uses" targetEndRoleName="" isLeaf="false" isAbstract="false">
+            <classMoniker Id="a5ebdde6-db98-4e33-9483-90edf45e064d" LastKnownName="&lt;&lt;abstract&gt;&gt;Employee " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1def68b8-1180-4a27-a9f5-5d8c31376a9c" name="Uses" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="d11487f5-855a-4f7f-9664-ebb7bb53ae98" name="Lower">
+                      <elementDefinition Id="9c9ea0bb-8ae4-48cb-92cd-76b9a175dd4a" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="eec3a6e1-ac34-440e-8bb3-11724bc169fe" name="Upper">
+                      <elementDefinition Id="dc0333ff-6125-4516-ae87-c958dc36f0de" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="099e5d59-78fa-4323-811a-dd4dd8811594" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="32571e80-7798-4d9f-ae99-9f76da18fd73" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="6a7f9008-77fe-489b-9951-c9f6cdb54a73" name="Lower">
+                      <elementDefinition Id="7650a009-1cf0-4cbf-bd03-45c296d63d79" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="dc0433e8-81c5-412e-a8f8-dda27882f166" name="Upper">
+                      <elementDefinition Id="99e6d553-140d-4fe8-b9a4-14810100e309" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="816d4edb-0a71-46ff-9df3-8dbce02cc9cf" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1b2cc96a-d4f8-48c2-8291-fcecbe561ae7" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="33361d3f-bc60-4064-8495-59c3b4bdb64e" name="state" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="438ac3e9-33f6-4906-8935-14b91c7f4006" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="611bd39d-f7e0-4657-95fe-ac1b470693d4" LastKnownName="Datetime" />
+            </type_NamedElement>
+          </property>
+          <property Id="c85bc618-4f6f-4b10-8590-1eefa620cb54" name="employees" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="de64cf6a-2a92-4a76-9c2b-0837a080f9a2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="30a1b464-de98-469b-bfb5-30e62cbfb083" LastKnownName="List&lt;Employee&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="4a28fed2-ffc4-493b-95f5-9e8dc56b7c01" name="getState" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e02166d9-3421-4b04-9d34-73603ec3475a" />
+          </operation>
+          <operation Id="e629cd2f-158c-427e-b1d2-a83b63e055c8" name="setState" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b73ece45-67da-4b7e-ae73-071aa92646a4" />
+          </operation>
+          <operation Id="ca31e62b-bda2-4243-a2fe-cc4a09302e50" name="attach" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9b661508-0599-446c-bd86-be923249b042" />
+          </operation>
+          <operation Id="7b821c59-5d39-4215-bb4f-07d3240ff8ef" name="notifyAllEmployees" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="377e591f-6837-4e20-9ebc-2b068b02357b" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="611bd39d-f7e0-4657-95fe-ac1b470693d4" name="Datetime" isAbstract="false" isLeaf="false" cachedFullName="Datetime">
+        <elementDefinition Id="9cb72972-09d8-489a-b66d-d832df93f843" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="30a1b464-de98-469b-bfb5-30e62cbfb083" name="List&lt;Employee&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Employee&gt;">
+        <elementDefinition Id="72c2d34f-55e5-44a8-bded-c83970c2b431" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2d2f3d99-3f88-4a74-98e4-15c518dca3d2" name="EmployeeSubject" isAbstract="false" isLeaf="false" cachedFullName="EmployeeSubject">
+        <elementDefinition Id="a7eb6d52-6ea0-4bc1-9188-a95df5ac0b70" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="76fedc02-e4b4-41c0-8c62-81c8cbfef65b" name="ModelingProject1">
+    <elementDefinition Id="2ebff26b-2063-4b9d-abc8-f63ff3bc7a1e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="77398629-d8b5-46bf-ab3f-7f8df08333ba">
+        <profileInstance Id="ef0a07a0-c659-41a1-891f-bb701676025c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="5723dd2c-2ea2-461c-b756-4cbb07b10d62">
+        <profileInstance Id="6a749d59-55bd-4e4a-93fb-bd342eb95d65" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="820be5b2-a8ca-47dd-b87e-b85ef8f1345b">
+        <profileInstance Id="6e01e37d-300c-4f84-9541-2934bbe13fa6" name="TextTemplateBindings">
+          <elementDefinition Id="dff00b84-c5dd-4020-b112-9cee41c727ae" />
+        </profileInstance>
+        <elementDefinition Id="97d34a55-04c9-450a-9238-96f2d05bd8fd" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="c101718b-9200-49d2-805c-514d2c81d7c5" name="UMLUseCaseDiagram1" linkedPackageId="b416be2c-805b-488f-b0f2-00e248c12f3a" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="df7f3897-43c6-4836-b95e-c39fd5d29040" name="HR" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0462685-67a5-4172-a535-1b9a2546797b" />
+        <targetEnds>
+          <association Id="f7bc2e10-748a-478f-ad5c-0397cd38ae2d" isDerived="false" sourceEndRoleName="HR" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0366158d-5a4e-4be7-91bc-04a8abf5e147" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36b744f8-4deb-4ec2-beaf-4e10a637330a" name="HR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f1c0c947-3d3f-47ba-a680-34dc198e4592" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59037a41-c480-42e6-91f1-ab13794143ee" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3ce5bc15-5591-4da9-a2cb-bed01dc04ce3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="01dd725c-c722-4842-8013-25fd5744a998" />
+          </association>
+          <association Id="8f8d516b-59aa-4d2a-afc3-54a89de6298c" isDerived="false" sourceEndRoleName="HR" targetEndRoleName="Maintain Employee records" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e70eefe3-e21c-4cca-bbef-6fd4815ffad4" LastKnownName="Maintain Employee records" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ee9c43f1-d720-4a70-8083-5f269040f4ea" name="HR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1bd61994-e867-412e-80dc-b5ea9d7834e7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6e468d02-2961-4dc1-b4dc-c7a4a457ac69" name="Maintain Employee records" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a39820b2-86fb-499c-affb-2bb938fce8ab" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="31fe9965-1220-467a-a327-1904f33bcf79" />
+          </association>
+          <association Id="9074782a-7353-43b8-afa0-22bd5e134a55" isDerived="false" sourceEndRoleName="HR" targetEndRoleName="Manage payrolls and taxes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e753a5f1-8db0-4d05-b3b4-28757041d921" LastKnownName="Manage Payrolls and Taxes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d431abe9-a972-4361-af63-19d567e8e35c" name="HR" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="393fd6fa-1f6e-4ca7-980f-00dc6a7d5b0c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7bc1966f-8b5d-4d08-a02e-6c545f0e87bb" name="Manage payrolls and taxes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ae37ab04-40c7-4b0d-8522-4de77fa10285" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="aa6c5937-cb2a-4c6e-849f-8dd8079d6abe" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0366158d-5a4e-4be7-91bc-04a8abf5e147" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e0468faa-dc89-4938-b9ec-e7f77ea3dc37" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" name="OVRMS System" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="45ef350a-b776-48da-a18f-701e7d1e4329" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="defeb9af-550e-4ad1-8eec-92860122e88d" name="Manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ad0cf605-fb43-4cb5-97df-88f6a81ced11" />
+        <targetEnds>
+          <association Id="c6299302-5754-4dde-85ca-4496e134b661" isDerived="false" sourceEndRoleName="Manager" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0366158d-5a4e-4be7-91bc-04a8abf5e147" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b557128e-2823-4d6c-aaea-07b2467cb994" name="Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1216843b-722a-4753-8b98-be6605657364" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9486429d-bad1-43c3-8eda-6cab3cbb0a3d" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8a4150e9-a26b-4dbb-8a80-12b6c41379a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d22efcfc-7702-4c0c-82d0-8b3828e250f0" />
+          </association>
+          <association Id="a842f1a5-d35f-477d-aed2-46e6cde051a0" isDerived="false" sourceEndRoleName="Manager" targetEndRoleName="Maintain Vehicle records" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d280dc35-cb51-425b-ac93-051301fd1176" LastKnownName="Maintain Vehicle records" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="61827f66-d55d-40f3-99d6-1a32b4febdda" name="Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9067ef25-0330-4faf-96a9-05ee7a78819c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a055ab3c-6ba5-49e2-895e-c625e0462ffb" name="Maintain Vehicle records" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="74b2f4a3-17c1-49a0-a975-b8581c8bb45c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="67a67579-476f-4f96-9427-19eca0859f8e" />
+          </association>
+          <association Id="81282519-de98-4a93-96f5-73f4164e9f72" isDerived="false" sourceEndRoleName="Manager" targetEndRoleName="Print Reports" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9ecd3c68-0ff4-47c1-9a6d-6329b2191c41" LastKnownName="Print Reports" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a02dddd4-a56f-4a41-a00c-926a35ee51c8" name="Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="54743f73-bde7-4203-98ed-da7b6390124b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2fc782fa-57fa-443b-8b6f-41073d0d9e39" name="Print Reports" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="17cb6eab-e4d2-4e87-8473-71eefa277600" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="88ec10fe-ab5a-4e5d-8fdd-1b9949033c17" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="e70eefe3-e21c-4cca-bbef-6fd4815ffad4" name="Maintain Employee records" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d6f43340-846e-43e1-97e6-fbbaa143b1a8" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d280dc35-cb51-425b-ac93-051301fd1176" name="Maintain Vehicle records" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0ac21a41-0314-4de6-b7c7-e1efb38f0607" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6417ee35-95af-47ce-a27c-8f97dcb71581" name="Maintain Rental records" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="176e455b-f50d-4cab-a9ef-e3cd7ed6e017" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="f2ddfe2a-ec49-44db-8f41-b7140272d174" name="Customer Service" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fa2f3339-32c0-447c-adb7-76f16e6a95ce" />
+        <targetEnds>
+          <association Id="e72d9405-ad4b-4dd6-a3c3-984a4410cd59" isDerived="false" sourceEndRoleName="Customer Service" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0366158d-5a4e-4be7-91bc-04a8abf5e147" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3911eb85-16a3-4ef2-8113-629bf74c3ba5" name="Customer Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="419ce8e1-a8c7-4676-879a-693338d41e26" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac667f4f-427d-46b1-8853-87dd1dda9b4a" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="31b73ce3-b577-4621-bc69-2362363cddb1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8bec2461-9659-46e4-a077-296ffce180a2" />
+          </association>
+          <association Id="e6cc65da-9c30-49b8-bf44-bed0239112ef" isDerived="false" sourceEndRoleName="Customer Service" targetEndRoleName="Maintain Rental records" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="6417ee35-95af-47ce-a27c-8f97dcb71581" LastKnownName="Maintain Rental records" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eff80885-7f9f-430b-8580-6dc7441f8ce9" name="Customer Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c07f4006-cf6c-4dc8-93b0-5f36e539911c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2a4b5854-b969-41ff-b0c6-d550a8124bdc" name="Maintain Rental records" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9e112f20-95c8-4b1b-93b6-83376cfbee72" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="fc09a7e3-9a02-49cb-ab72-5a03398a01fc" />
+          </association>
+          <association Id="ab480b31-76ac-48cb-9f45-0322351b55fc" isDerived="false" sourceEndRoleName="Customer Service" targetEndRoleName="Check vehicle availability" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1a84a648-13aa-42ad-b3e2-1b45d1c8500e" LastKnownName="Check Vehicle details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f3ec35a5-02b1-4ea9-bd67-28289a1d032f" name="Customer Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="54d75fee-4b25-4f3b-acc1-50d962c36eb8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b662f184-9458-42c2-83a8-cce12f035e0b" name="Check vehicle availability" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4cfca130-6308-4902-9641-b8ecd77d604e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a06d00a6-5ebe-45ae-abbb-06a4a7d5648a" />
+          </association>
+          <association Id="a82f8edc-9220-4f14-960d-f9e4eededba0" isDerived="false" sourceEndRoleName="Customer Service" targetEndRoleName="Rent vehichles to customers" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4e32760a-6139-4bce-b342-8e280494abb3" LastKnownName="Rent Vehichles to Customers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e0b6122f-6281-4bf5-a451-23ce1cb78504" name="Customer Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="34f5c740-5eac-4201-8cb1-e282deab353d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f5b44b33-c104-43a8-9035-a78cfb77a882" name="Rent vehichles to customers" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="332fd7eb-5a46-4b01-9b33-044a08f51fd7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="be69930e-9ed5-482d-a6b9-0c04fe3cf9a4" />
+          </association>
+          <association Id="49d97d70-8f24-4015-b917-347d5e79650f" isDerived="false" sourceEndRoleName="Customer Service" targetEndRoleName="Verify Customer details" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="26091915-2658-4696-a2da-f4998982a5ad" LastKnownName="Verify Customer details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8374d9e0-83bf-47c2-a523-55be669332f6" name="Customer Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4619ce74-1d2d-4bce-88a1-6b98eedbd2a1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="083c8fbb-6795-465d-aece-92cc0e34362b" name="Verify Customer details" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3b69354f-5e2b-4ca3-b680-a17479643390" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="dafd161e-c14b-4b39-a453-45a2c47eea2a" />
+          </association>
+          <association Id="12e59bf0-e8f7-4634-bb96-3e7ccfe77ca0" isDerived="false" sourceEndRoleName="Customer Service" targetEndRoleName="Register rantal payment" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4a5a393d-1b72-4db1-a8a4-6b5014fcf16f" LastKnownName="Register Rental Payment" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6cb3dc3a-4a81-4bb2-9986-76a10770ca34" name="Customer Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fb2829df-f772-4439-93cd-5aef505a5852" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="27111bf0-6dbd-4098-a802-a83476e188c5" name="Register rantal payment" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4194ba6f-7762-4785-afa8-b8af98b46dd0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1ea50a1c-97b8-48d7-9473-ebef6757c1a6" />
+          </association>
+          <association Id="42b82250-1a21-44cf-99cd-c81217dd83dd" isDerived="false" sourceEndRoleName="Customer Service" targetEndRoleName="Maintain Customer records" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b492dbd0-1d15-46f2-bada-86a39f9bd8dc" LastKnownName="Maintain Customer records" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="75793caf-39b5-4c55-ae74-d9fcadd16ce6" name="Customer Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5cd6e198-1e9b-4222-90af-846fb167a570" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="18d464a0-a4cb-4441-8bd1-46fbe0eec524" name="Maintain Customer records" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e537d9f8-7a62-4467-a364-d863c1921e75" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="14b452ff-1849-472c-af31-c5cc78097814" />
+          </association>
+          <association Id="e82fa5e8-a606-4884-9f45-d201b72005e4" isDerived="false" sourceEndRoleName="Customer Service" targetEndRoleName="Print Invoices" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9ecd3c68-0ff4-47c1-9a6d-6329b2191c41" LastKnownName="Print Reports" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="64d30f20-1a26-4de3-96aa-c170b9c17ff2" name="Customer Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="563a1818-a83b-4905-ba76-db5020b813da" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cabb5d8f-2580-4881-aadd-4bc6e0a0eb58" name="Print Invoices" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="05e644f9-cb0e-4453-b192-31aec8ecdb72" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a86341e9-a901-44ed-b4eb-caf6f4d3a913" />
+          </association>
+          <association Id="08dbf956-247d-4532-908a-60e9499f7ccc" isDerived="false" sourceEndRoleName="Customer Service" targetEndRoleName="Check Vehicle availability" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e58ad37b-1137-482c-9d62-a2ba7cd868aa" LastKnownName="Check Vehicle availability" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c21547bf-823d-4f42-b09d-2b754826d197" name="Customer Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c378c8d7-e770-4207-a9fe-ac10ba5c58d9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="56c05cf7-fd77-4150-90fb-4e9c62a2d7cb" name="Check Vehicle availability" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b284eeda-e761-4a55-a69a-8241ab00b627" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3736e1ce-ca85-4398-bfc1-448b6ae7e42d" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c6794b68-76b4-4d19-9786-cf632a01a047" name="Administrator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ef07e640-68f7-462a-bd06-5373ab0b0845" />
+        <targetEnds>
+          <association Id="dcc2e4ea-a2f2-4642-9b7e-d625e74dbd24" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0366158d-5a4e-4be7-91bc-04a8abf5e147" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d50c4104-9c6b-4d60-9a49-5bc5c97dfce5" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f70fb1b5-b283-4479-9b71-a4241c2e2548" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a333ddb9-235d-4c42-868c-ac2ff34c54b5" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3c925cbb-0f60-4a62-9718-d2cedc961129" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0938c256-7c4b-43c3-bec7-6e4ea203ac33" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="de9f9796-02e7-4191-91c9-c7a0520b5d64" name="Car Washer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c3ba09d7-94b1-492b-85f3-bae5d303a4bd" />
+        <targetEnds>
+          <association Id="38bcb7a6-f5b9-40d9-9fa1-5bcd6db241ee" isDerived="false" sourceEndRoleName="Car Washer" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0366158d-5a4e-4be7-91bc-04a8abf5e147" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="aaecc5c5-0bf8-4925-9f6f-1ef2e196b50e" name="Car Washer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="69792ec8-3c79-4af0-907f-8d8c09c3ddea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="824b53f2-015e-42bf-b5c7-e81705acec79" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bb8d416f-3c69-4d59-a9cc-18b5e12c5857" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f3bbbc78-c24a-4180-8f24-c2a8fe8c5c1c" />
+          </association>
+          <association Id="c7d5b508-e95c-41a8-9a43-fabbf10252b8" isDerived="false" sourceEndRoleName="Car Washer" targetEndRoleName="Check vehicle availability" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1a84a648-13aa-42ad-b3e2-1b45d1c8500e" LastKnownName="Check Vehicle details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dd036bee-c5c4-44c9-8957-fa46d7720c00" name="Car Washer" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="139b5480-43f0-4a72-9b9d-bd20b67caefd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="431eb09a-1e8b-410f-91ce-a13998880d60" name="Check vehicle availability" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4c5a9efc-c69d-4fb3-af0a-7f8c13befb00" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="6aa98ed4-0f44-490f-8174-1d14f350fd21" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="e248bbc8-224b-4dc7-b7dc-bb054b1c0dc4" name="Delivery Driver" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d2ab57ef-96d7-4465-bddb-41809d27ad8a" />
+        <targetEnds>
+          <association Id="d669e951-5bbb-4f3f-a7c1-13a820db85b3" isDerived="false" sourceEndRoleName="Delivery Driver" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0366158d-5a4e-4be7-91bc-04a8abf5e147" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="78328537-3899-4594-a2f1-4c3437c8d3ca" name="Delivery Driver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="188f5394-4233-4322-b085-6f09c3c5124b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="05fe46e1-0e33-45fd-a524-249d0ffbcab5" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="381113fd-1331-4386-9398-42505772a426" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2f4c3d15-0b40-4a9d-a6cf-f550d0b9d563" />
+          </association>
+          <association Id="a3168575-09d1-4f7c-bccd-e659ab6465e5" isDerived="false" sourceEndRoleName="Delivery Driver" targetEndRoleName="Check vehicle availability" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1a84a648-13aa-42ad-b3e2-1b45d1c8500e" LastKnownName="Check Vehicle details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="091eee9f-2264-4aef-89dc-a070f33fb5f0" name="Delivery Driver" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="db42d52d-0282-4146-a5ff-e2a60b4886d6" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="31d9d2a1-2a41-4148-9d2d-080d0c705d7b" name="Check vehicle availability" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cc5b3db1-9786-4e21-a044-bfadce11b7ee" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="36e6fe40-ecfc-4125-9ca9-8ba99daf72df" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1d2c967f-8292-4d3c-b40f-08353613914c" name="Chauffeur Service" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="069df51c-fd3d-4ecb-b4e6-a2684dc7b394" />
+        <targetEnds>
+          <association Id="4b8489b7-bdda-4f08-81cd-1f009e2176a4" isDerived="false" sourceEndRoleName="Chauffeur Service" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0366158d-5a4e-4be7-91bc-04a8abf5e147" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7a84a06e-c171-48e2-a06a-4002c404ac8b" name="Chauffeur Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="36763671-4bcf-412c-b575-06a38993f592" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="218c5c2b-2e71-4771-9453-cac991937a07" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a692256f-8b27-41a6-8eaf-8843dedb2a32" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b87323a9-8fa5-420c-8573-642c006c0db1" />
+          </association>
+          <association Id="c172a1f5-4985-40c4-b458-64201f88e8d0" isDerived="false" sourceEndRoleName="Chauffeur Service" targetEndRoleName="Check vehicle availability" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1a84a648-13aa-42ad-b3e2-1b45d1c8500e" LastKnownName="Check Vehicle details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="781e2f56-548c-464a-92d6-4395d3379a39" name="Chauffeur Service" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1794b9be-d623-4cc9-b71a-ee15d66fb586" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66dd937e-1c26-42e4-a099-7a71e277d523" name="Check vehicle availability" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2bb151cb-e466-4dfc-a888-bcdcc4c87dcd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b7192057-f22c-4481-a0d1-67267bcb15be" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="670a297c-4b38-4385-b313-b9d22a044a62" name=" Service Agent" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5dafd959-212d-4f9c-a9a6-8c318c202399" />
+        <targetEnds>
+          <association Id="df89ff9f-e9dd-47e9-9c1e-57b673bd0572" isDerived="false" sourceEndRoleName=" Service Agent" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0366158d-5a4e-4be7-91bc-04a8abf5e147" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cf037104-2714-484b-8883-133e9d33f046" name=" Service Agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="674bfd07-6df7-4cd2-a495-fbe53bf98fed" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="412f0cf0-88c6-49f7-a962-ad42585b1449" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b063d22a-fd67-479a-b8a3-a3f16e061ec7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b0b459e6-2e05-42fe-9289-06adb60cac52" />
+          </association>
+          <association Id="64b7d4f4-9739-486d-9918-447cd394a783" isDerived="false" sourceEndRoleName=" Service Agent" targetEndRoleName="Check vehicle availability" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1a84a648-13aa-42ad-b3e2-1b45d1c8500e" LastKnownName="Check Vehicle details" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c87fd149-b805-434a-bdb1-66fd8ce2dde8" name=" Service Agent" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="830b26c6-1ed2-46b7-a385-ee6ca4caf30b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="231149e3-ec88-43a8-b07f-34c6055de994" name="Check vehicle availability" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8f45ff72-a078-455a-9026-98a1e0909a8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bc4f8e12-3222-4b3f-987c-c09e88d1f930" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="48abdfdd-59c9-4eb2-a68d-4746b8143b8c" name="&lt;&lt;Employee&gt;&gt;" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6f3bb087-881a-4895-8908-7c48281319e4" />
+        <generalsInternal>
+          <generalization Id="328f0835-f996-4d1f-bd10-1aaca2e1382d" isSubstitutable="false">
+            <actorMoniker Id="df7f3897-43c6-4836-b95e-c39fd5d29040" LastKnownName="HR" />
+            <elementDefinition Id="8723e9dd-cbf9-4a5f-bf11-0d005bae2dcd" />
+          </generalization>
+          <generalization Id="fe7c3da8-1a40-471b-9407-9fd1eb8b0f59" isSubstitutable="false">
+            <actorMoniker Id="defeb9af-550e-4ad1-8eec-92860122e88d" LastKnownName="Manager" />
+            <elementDefinition Id="49d578bb-de01-44bb-ad2d-2ab42be35d5f" />
+          </generalization>
+          <generalization Id="8ae1a987-01c6-4d95-8dda-921299744f57" isSubstitutable="false">
+            <actorMoniker Id="f2ddfe2a-ec49-44db-8f41-b7140272d174" LastKnownName="Customer Service" />
+            <elementDefinition Id="a0ece597-00f7-4088-8094-b2925e034eab" />
+          </generalization>
+          <generalization Id="66b18fb8-bbfc-42bf-99ce-120fccc3e4da" isSubstitutable="false">
+            <actorMoniker Id="c6794b68-76b4-4d19-9786-cf632a01a047" LastKnownName="Administrator" />
+            <elementDefinition Id="6028f34e-b7fd-432d-91b3-4fe523ae4679" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="c780784f-c086-4d14-be85-55c1753b0015" name="&lt;&lt;Employee&gt;&gt; " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9b12791-5726-405c-941e-7f48e7a15aff" />
+        <generalsInternal>
+          <generalization Id="d4d148b3-6b4c-4c4f-8053-7cf9f573975a" isSubstitutable="false">
+            <actorMoniker Id="670a297c-4b38-4385-b313-b9d22a044a62" LastKnownName=" Service Agent" />
+            <elementDefinition Id="c540399c-873a-4a89-84d5-db272c60d9d5" />
+          </generalization>
+          <generalization Id="420331d2-cede-4541-80ba-fb8fb2b8ab99" isSubstitutable="false">
+            <actorMoniker Id="1d2c967f-8292-4d3c-b40f-08353613914c" LastKnownName="Chauffeur Service" />
+            <elementDefinition Id="acc50a0c-4d91-49cd-8f30-e244d39a492e" />
+          </generalization>
+          <generalization Id="22ad6e61-097a-4d78-bcf6-bec28d2379ca" isSubstitutable="false">
+            <actorMoniker Id="e248bbc8-224b-4dc7-b7dc-bb054b1c0dc4" LastKnownName="Delivery Driver" />
+            <elementDefinition Id="f2a6ac3a-8bc5-4203-90ed-9dec17687a03" />
+          </generalization>
+          <generalization Id="ea8be8af-b0dd-433c-be8f-70075d34451f" isSubstitutable="false">
+            <actorMoniker Id="de9f9796-02e7-4191-91c9-c7a0520b5d64" LastKnownName="Car Washer" />
+            <elementDefinition Id="85d77e4f-d0d0-454c-a817-dac0cfb4df94" />
+          </generalization>
+        </generalsInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="1a84a648-13aa-42ad-b3e2-1b45d1c8500e" name="Check Vehicle details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="133e6549-14b9-490d-934d-caaf715d767c" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4e32760a-6139-4bce-b342-8e280494abb3" name="Rent Vehichles to Customers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a347692f-03af-4746-b1a3-ec0b12ae3a54" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="26091915-2658-4696-a2da-f4998982a5ad" name="Verify Customer details" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3186d0c1-be02-4ba3-a099-88bc0e4bca59" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b492dbd0-1d15-46f2-bada-86a39f9bd8dc" name="Maintain Customer records" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6111d438-6170-4424-b263-f8d751f42b43" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4a5a393d-1b72-4db1-a8a4-6b5014fcf16f" name="Register Rental Payment" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="216a0ba2-fddd-46c5-bfe7-84b044318592" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e753a5f1-8db0-4d05-b3b4-28757041d921" name="Manage Payrolls and Taxes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3fb32e1a-e8b5-49ce-8f3a-c3ccfb414b1b" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9ecd3c68-0ff4-47c1-9a6d-6329b2191c41" name="Print Reports" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3692327-b8ea-4900-b7bb-11b73f3e2e5e" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e58ad37b-1137-482c-9d62-a2ba7cd868aa" name="Check Vehicle availability" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="92f8383e-c538-4286-85d1-f26b37317c03" />
+        <subjects>
+          <subsystemMoniker Id="ef4785d9-bd16-4c1d-9640-70888d1d16d7" LastKnownName="OVRMS System" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="b416be2c-805b-488f-b0f2-00e248c12f3a" name="ModelingProject1">
+    <elementDefinition Id="2ebff26b-2063-4b9d-abc8-f63ff3bc7a1e" />
+    <profileInstances>
+      <packageHasProfileInstances Id="fda8e987-4070-4678-ab8a-93fa18bfbaa0">
+        <profileInstance Id="8ca1a1c2-0d43-4854-b51d-53d0c98fe7e9" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b43006ff-501c-4461-8e42-c4abc184ee2d">
+        <profileInstance Id="11761b6b-afd2-4795-8c26-ee3a4daa0914" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="a1da0639-02ee-4c16-a226-e163267fd8e1">
+        <profileInstance Id="eb15ab61-f354-4851-85b3-b2f1bb5f9466" name="TextTemplateBindings">
+          <elementDefinition Id="dff00b84-c5dd-4020-b112-9cee41c727ae" />
+        </profileInstance>
+        <elementDefinition Id="97d34a55-04c9-450a-9238-96f2d05bd8fd" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>
