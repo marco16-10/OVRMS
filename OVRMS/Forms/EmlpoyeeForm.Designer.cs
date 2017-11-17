@@ -1,6 +1,6 @@
-﻿namespace OVRMS
+﻿namespace OVRMS.Forms
 {
-    partial class Form1
+    partial class EmlpoyeeForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,13 +30,13 @@
         {
             this.SuspendLayout();
             // 
-            // Form1
+            // EmlpoyeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(691, 324);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(1410, 684);
+            this.Name = "EmlpoyeeForm";
+            this.Text = "EmlpoyeeForm";
             this.ResumeLayout(false);
 
         }
@@ -44,4 +44,3 @@
         #endregion
     }
 }
-

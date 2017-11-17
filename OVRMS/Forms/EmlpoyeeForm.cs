@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace OVRMS
+namespace OVRMS.Forms
 {
-    public partial class Form1 : Form
+    public partial class EmlpoyeeForm : Form
     {
-        public Form1()
+        public EmlpoyeeForm()
         {
             InitializeComponent();
         }

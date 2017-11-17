@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="OVRMS" Class="OVRMSDCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=&quot;C:\Users\Marco\OneDrive\Whitireia\III Trimeter\C#\Assignment 1\OVRMS\OVRMS\OVRMS.mdf&quot;;Integrated Security=True" SettingsObjectName="OVRMS.Properties.Settings" SettingsPropertyName="OVRMSConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.VehicleCategory" Member="VehicleCategories">
+    <Type Name="VehicleCategory">
+      <Column Name="IdCategory" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DailyRate" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="VehicleCategory_Vehicle" Member="Vehicles" ThisKey="IdCategory" OtherKey="IdCategory" Type="Vehicle" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Invoice" Member="Invoices">
+    <Type Name="Invoice">
+      <Column Name="IdInvoice" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdRental" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="SubTotal" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TaxTotal" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="GrandTotal" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="AmountPaid" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="IssueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="PaidDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Rental_Invoice" Member="Rental" ThisKey="IdRental" OtherKey="IdRental" Type="Rental" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Payroll" Member="Payrolls">
+    <Type Name="Payroll">
+      <Column Name="IdPayroll" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdEmployee" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IssueDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateFrom" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DateTo" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HoursOvertime" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="HoursRegular" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="KiwiSaverDeduction" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="GrossEarning" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="DonationTaxCredit" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="Tax" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="StudentLoadRepayment" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="PayrollDonation" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="TotalPayment" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Column Name="KiwiSaverEmployerContribution" Type="System.Decimal" DbType="Money" CanBeNull="true" />
+      <Association Name="Employee_Payroll" Member="Employee" ThisKey="IdEmployee" OtherKey="IdEmp" Type="Employee" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Rental" Member="Rentals">
+    <Type Name="Rental">
+      <Column Name="IdRental" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdCustomer" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="IdVehicle" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RentalExpStartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RentalEndStartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RentalActStartDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="RentalActEndDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DamagesPenalty" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="LowFuelPenalty" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="RoadOffencePenalty" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="LateReturnPenalty" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="NumberOfKm" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumberOfDays" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Rental_Invoice" Member="Invoices" ThisKey="IdRental" OtherKey="IdRental" Type="Invoice" />
+      <Association Name="Vehicle_Rental" Member="Vehicle" ThisKey="IdVehicle" OtherKey="IdVehicle" Type="Vehicle" IsForeignKey="true" />
+      <Association Name="Customer_Rental" Member="Customer" ThisKey="IdCustomer" OtherKey="IdCustomer" Type="Customer" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Role" Member="Roles">
+    <Type Name="Role">
+      <Column Name="IdRole" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Name" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Association Name="Role_Employee" Member="Employees" ThisKey="IdRole" OtherKey="IdRole" Type="Employee" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Vehicle" Member="Vehicles">
+    <Type Name="Vehicle">
+      <Column Name="IdVehicle" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="IdCategory" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Manufacturer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Model" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="RegistrationNo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Status" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="Color" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Description" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Odometer" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Year" Type="System.String" DbType="NChar(4)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Vehicle_Rental" Member="Rentals" ThisKey="IdVehicle" OtherKey="IdVehicle" Type="Rental" />
+      <Association Name="VehicleCategory_Vehicle" Member="VehicleCategory" ThisKey="IdCategory" OtherKey="IdCategory" Type="VehicleCategory" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customer" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="IdCustomer" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="LicenceNumber" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DateOfBirth" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Mobile" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Customer_Rental" Member="Rentals" ThisKey="IdCustomer" OtherKey="IdCustomer" Type="Rental" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Employee" Member="Employees">
+    <Type Name="Employee">
+      <Column Name="IdEmp" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="FirstName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="LastName" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+      <Column Name="IdRole" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Address" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="DateofHire" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="EmploymentType" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Gender" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="HourlyWage" Type="System.Decimal" DbType="Decimal(18,0)" CanBeNull="true" />
+      <Column Name="Password" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Qualification" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TaxCode" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="IsKiwiSaver" Type="System.Char" DbType="NChar(1)" CanBeNull="true" />
+      <Column Name="KiwiSaverContrRate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EmployerContrRate" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Notes" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Employee_Payroll" Member="Payrolls" ThisKey="IdEmp" OtherKey="IdEmployee" Type="Payroll" />
+      <Association Name="Role_Employee" Member="Role" ThisKey="IdRole" OtherKey="IdRole" Type="Role" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>
