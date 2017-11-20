@@ -69,6 +69,8 @@
     <Compile Include="DataAccess\CustomerDAL.cs" />
     <Compile Include="DataAccess\IRecord.cs" />
     <Compile Include="DataAccess\EmployeeDAL.cs" />
+    <Compile Include="DataAccess\RentalDAL.cs" />
+    <Compile Include="DataAccess\VehicleDAL.cs" />
     <Compile Include="EventArgs.cs" />
     <Compile Include="Events.cs" />
     <Compile Include="Forms\CustomerForm.cs">
@@ -104,10 +106,16 @@
     <Compile Include="BusinessLogic\Employee.cs" />
     <Compile Include="BusinessLogic\HR.cs" />
     <Compile Include="BusinessLogic\Master.cs" />
+    <Compile Include="Forms\VehicleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\VehicleForm.Designer.cs">
+      <DependentUpon>VehicleForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="OVRMSDataSet.cs">
       <DependentUpon>OVRMSDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="OVRMSDataSet1.Designer.cs">
+    <Compile Include="OVRMSDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>OVRMSDataSet.xsd</DependentUpon>
@@ -146,6 +154,9 @@
     <None Include="OVRMSDC.dbml.layout">
       <DependentUpon>OVRMSDC.dbml</DependentUpon>
     </None>
+    <EmbeddedResource Include="Forms\VehicleForm.resx">
+      <DependentUpon>VehicleForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -167,7 +178,7 @@
     <None Include="OVRMSDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <SubType>Designer</SubType>
-      <LastGenOutput>OVRMSDataSet1.Designer.cs</LastGenOutput>
+      <LastGenOutput>OVRMSDataSet.Designer.cs</LastGenOutput>
     </None>
     <None Include="OVRMSDataSet.xss">
       <DependentUpon>OVRMSDataSet.xsd</DependentUpon>
@@ -210,6 +221,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>OVRMS.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Rentals103.png" />
+    <Content Include="VariousStaff.txt" />
+    <None Include="Resources\CarRentalLogo2.png" />
     <None Include="Resources\tables40.png" />
     <None Include="Resources\tables103.png" />
     <None Include="Resources\RentHistory40.png" />
@@ -240,9 +254,7 @@
     <None Include="Resources\Cars1.2.102.png" />
     <None Include="Resources\Image1.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ObjectBase\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>

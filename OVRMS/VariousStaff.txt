@@ -1,0 +1,10 @@
+﻿//Set form Background to gradient color
+private void Form_Paint(object sender, PaintEventArgs e)
+{
+    Graphics g = e.Graphics;
+    Rectangle rect = new Rectangle(0, 0, this.Size.Width, this.Size.Height);
+    LinearGradientBrush brush = new LinearGradientBrush(rect, ColorTranslator.FromHtml("#3b547c"), Color.White, LinearGradientMode.Vertical);
+    g.FillRectangle(brush, rect);
+    brush.Dispose();
+} 
+

@@ -12,7 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
-using OVRMS.ObjectBase;
+using OVRMS.Forms;
 
 namespace OVRMS
 {
@@ -51,6 +51,7 @@ namespace OVRMS
         public MDIForm()
         {
             InitializeComponent();
+            //mainToolStrip.Renderer = new ToolStripRenderer();
         }
 
         private void ShowNewForm(object sender, EventArgs e)
@@ -131,7 +132,13 @@ namespace OVRMS
 
         private void employeeToolStripButton_Click(object sender, EventArgs e)
         {
-
+            EmlpoyeeForm childForm = new EmlpoyeeForm();
+            copenMDIChild(childForm);
+        }
+        private void vehicleToolStripButton_Click(object sender, EventArgs e)
+        {
+            VehicleForm childForm = new VehicleForm();
+            copenMDIChild(childForm);
         }
 
         private void MDIForm_Load(object sender, EventArgs e)
@@ -332,5 +339,8 @@ namespace OVRMS
                 SWP_NOACTIVATE | SWP_NOMOVE | SWP_NOSIZE | SWP_NOZORDER |
                 SWP_NOOWNERZORDER | SWP_FRAMECHANGED);
         }
+
+
+
     }
 }

@@ -11,6 +11,7 @@ namespace OVRMS.BLL
     {
         CustomerDAL cust = new CustomerDAL();
         EmployeeDAL s = new EmployeeDAL();
+        VehicleDAL veh = new VehicleDAL();
         OVRMSDCDataContext db = new OVRMSDCDataContext();
 
         /* Customer Record */
@@ -56,7 +57,7 @@ namespace OVRMS.BLL
         {
             /* Store the MD5 of password */
             LoginBLL l = new LoginBLL();
-            string password = l.GetMd5Hash(nw.Password);
+            string password = nw.Password;//l.GetMd5Hash(nw.Password);
             nw.Password = password;
 
             return s.addItem(nw);
@@ -66,7 +67,7 @@ namespace OVRMS.BLL
         {
             /* Store the MD5 of password */
             LoginBLL l = new LoginBLL();
-            string password = l.GetMd5Hash(nw.Password);
+            string password = nw.Password;//l.GetMd5Hash(nw.Password);
             nw.Password = password;
             
             s.updateItem(nw);
@@ -97,6 +98,45 @@ namespace OVRMS.BLL
                                   LastName = emp.LastName
                               };
             return EmployeeList.Distinct();
+        }
+
+        /* Vehicle Record */
+        public int addVehicle(Vehicle nw)
+        {
+            return veh.addItem(nw);
+        }
+
+        public void updateVehicle(Vehicle nw)
+        {
+            veh.updateItem(nw);
+        }
+
+        public Vehicle getVehicle(int pid)
+        {
+            return veh.getItem(pid);
+        }
+
+        public Vehicle getVehicle(string str)
+        {
+            return veh.getItem(str);
+        }
+
+        public void deleteVehicle(int pid)
+        {
+            veh.deleteItem(pid);
+        }
+
+        public object getVehicleGridList()
+        {
+            var VehicleList = from veh in db.Vehicles
+                              join c in db.VehicleCategories on veh.IdCategory equals c.IdCategory
+                               select new
+                               {
+                                   ID = veh.IdVehicle,
+                                   ModelManufacturer = veh.Model + " - " + veh.Manufacturer,
+                                   Category = c.Name
+                               };
+            return VehicleList.Distinct();
         }
 
 

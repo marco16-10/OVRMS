@@ -1,96 +1,108 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.5, 12" name="OVRMSDC">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.5, 14.125" name="OVRMSDC">
   <DataContextMoniker Name="/OVRMSDCDataContext" />
   <nestedChildShapes>
-    <classShape Id="b8517244-7600-4e2d-a045-e6b66a6f0cb4" absoluteBounds="0.75, 3.125, 2, 1.3862939453124996">
+    <classShape Id="b8517244-7600-4e2d-a045-e6b66a6f0cb4" absoluteBounds="0.75, 2, 2, 1.5785953776041666">
       <DataClassMoniker Name="/OVRMSDCDataContext/VehicleCategory" />
       <nestedChildShapes>
-        <elementListCompartment Id="77d9e37e-89e9-4830-a3bf-bb377edcdb16" absoluteBounds="0.765, 3.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="77d9e37e-89e9-4830-a3bf-bb377edcdb16" absoluteBounds="0.76500000059604645, 2.4600000008940697, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="24f4c1c2-3ddb-494b-99b1-3027ac42fcf7" absoluteBounds="9, 3.75, 2, 2.7324039713541666">
+    <classShape Id="24f4c1c2-3ddb-494b-99b1-3027ac42fcf7" absoluteBounds="9, 1.375, 2, 2.7324039713541666">
       <DataClassMoniker Name="/OVRMSDCDataContext/Invoice" />
       <nestedChildShapes>
-        <elementListCompartment Id="5ff25874-2ed3-4222-a0c4-e5eb170f9917" absoluteBounds="9.015, 4.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="5ff25874-2ed3-4222-a0c4-e5eb170f9917" absoluteBounds="9.0150000005960464, 1.8350000008940697, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="bb8e9e9e-9078-479f-8f31-add348c06ea3" absoluteBounds="12.25, 8, 2, 3.6939111328124987">
+    <classShape Id="bb8e9e9e-9078-479f-8f31-add348c06ea3" absoluteBounds="12.25, 6.125, 2, 3.6939111328124987">
       <DataClassMoniker Name="/OVRMSDCDataContext/Payroll" />
       <nestedChildShapes>
-        <elementListCompartment Id="63808140-eab6-4cd7-aa87-617e9dad1899" absoluteBounds="12.265, 8.46, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="63808140-eab6-4cd7-aa87-617e9dad1899" absoluteBounds="12.265000000596046, 6.58500000089407, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="22da8449-ab60-4401-a104-1ffb4cbcbeed" absoluteBounds="6.25, 2.125, 2, 3.5016097005208326">
+    <classShape Id="22da8449-ab60-4401-a104-1ffb4cbcbeed" absoluteBounds="6.25, 1, 2, 3.5016097005208326">
       <DataClassMoniker Name="/OVRMSDCDataContext/Rental" />
       <nestedChildShapes>
-        <elementListCompartment Id="daf73347-2012-4ce9-8d16-f838816e5e79" absoluteBounds="6.265, 2.585, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="daf73347-2012-4ce9-8d16-f838816e5e79" absoluteBounds="6.2650000005960464, 1.4600000008940697, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="4ff18fd2-3a44-45e0-9ebc-08f53f025dee" absoluteBounds="6.75, 9.125, 2, 1.3862939453124987">
+    <classShape Id="4ff18fd2-3a44-45e0-9ebc-08f53f025dee" absoluteBounds="6.75, 7.25, 2, 1.3862939453124987">
       <DataClassMoniker Name="/OVRMSDCDataContext/Role" />
       <nestedChildShapes>
-        <elementListCompartment Id="316bf474-85e7-4cad-8898-a050b9d0e3a8" absoluteBounds="6.765, 9.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="316bf474-85e7-4cad-8898-a050b9d0e3a8" absoluteBounds="6.7650000005960464, 7.71000000089407, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="f46fb07e-cf9d-4975-a2ed-97f123f45070" absoluteBounds="3.5, 2.375, 2, 2.9247054036458322">
+    <classShape Id="f46fb07e-cf9d-4975-a2ed-97f123f45070" absoluteBounds="3.5, 1.25, 2, 3.1170068359374996">
       <DataClassMoniker Name="/OVRMSDCDataContext/Vehicle" />
       <nestedChildShapes>
-        <elementListCompartment Id="2f1e3337-40c8-4111-82b0-d8bd7af66d20" absoluteBounds="3.515, 2.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="2f1e3337-40c8-4111-82b0-d8bd7af66d20" absoluteBounds="3.5150000005960464, 1.7100000008940697, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(8.25 : 4.68830485026042); (9 : 4.68830485026042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(8.25 : 2.74120198567708); (9 : 2.74120198567708)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/OVRMSDCDataContext/Rental/Rental_Invoice" />
       <nodes>
         <classShapeMoniker Id="22da8449-ab60-4401-a104-1ffb4cbcbeed" />
         <classShapeMoniker Id="24f4c1c2-3ddb-494b-99b1-3027ac42fcf7" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 3.83735270182292); (6.25 : 3.83735270182292)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(5.5 : 2.80850341796875); (6.25 : 2.80850341796875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/OVRMSDCDataContext/Vehicle/Vehicle_Rental" />
       <nodes>
         <classShapeMoniker Id="f46fb07e-cf9d-4975-a2ed-97f123f45070" />
         <classShapeMoniker Id="22da8449-ab60-4401-a104-1ffb4cbcbeed" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 3.81814697265625); (3.5 : 3.81814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(0.75 : 2.78929768880208); (0.375 : 2.78929768880208); (0.375 : 0.875); (4.5 : 0.875); (4.5 : 1.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/OVRMSDCDataContext/VehicleCategory/VehicleCategory_Vehicle" />
       <nodes>
         <classShapeMoniker Id="b8517244-7600-4e2d-a045-e6b66a6f0cb4" />
         <classShapeMoniker Id="f46fb07e-cf9d-4975-a2ed-97f123f45070" />
       </nodes>
     </associationConnector>
-    <classShape Id="3f2c5ae3-37dd-4edb-9fa5-f93adf7c88dc" absoluteBounds="4.75, 6.25, 2, 2.7324039713541666">
+    <classShape Id="3f2c5ae3-37dd-4edb-9fa5-f93adf7c88dc" absoluteBounds="3.5, 5.375, 2, 2.7324039713541666">
       <DataClassMoniker Name="/OVRMSDCDataContext/Customer" />
       <nestedChildShapes>
-        <elementListCompartment Id="dad53368-c191-4f7a-a4f1-20ee3437794c" absoluteBounds="4.765, 6.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="dad53368-c191-4f7a-a4f1-20ee3437794c" absoluteBounds="3.5150000005960464, 5.83500000089407, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(6.5 : 6.25); (6.5 : 5.62660970052083)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(5.5 : 6.28125); (6.46875 : 6.28125); (6.46875 : 4.50160970052083)]" fixedFrom="Algorithm" fixedTo="Algorithm">
       <AssociationMoniker Name="/OVRMSDCDataContext/Customer/Customer_Rental" />
       <nodes>
         <classShapeMoniker Id="3f2c5ae3-37dd-4edb-9fa5-f93adf7c88dc" />
         <classShapeMoniker Id="22da8449-ab60-4401-a104-1ffb4cbcbeed" />
       </nodes>
     </associationConnector>
-    <classShape Id="29f9a71e-7ae6-4fde-b8e5-4babb86fe620" absoluteBounds="9.375, 7.5, 2, 3.8862125651041666">
+    <classShape Id="29f9a71e-7ae6-4fde-b8e5-4babb86fe620" absoluteBounds="9.5, 6, 2, 3.8862125651041666">
       <DataClassMoniker Name="/OVRMSDCDataContext/Employee" />
       <nestedChildShapes>
-        <elementListCompartment Id="e2a0df27-5ade-47ff-9f0c-0c85c50e8ea9" absoluteBounds="9.39, 7.9600000000000009, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e2a0df27-5ade-47ff-9f0c-0c85c50e8ea9" absoluteBounds="9.5150000005960464, 6.46000000089407, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(11.375 : 9.69310628255208); (12.25 : 9.69310628255208)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(11.5 : 7.97195556640625); (12.25 : 7.97195556640625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/OVRMSDCDataContext/Employee/Employee_Payroll" />
       <nodes>
         <classShapeMoniker Id="29f9a71e-7ae6-4fde-b8e5-4babb86fe620" />
         <classShapeMoniker Id="bb8e9e9e-9078-479f-8f31-add348c06ea3" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(8.75 : 9.81814697265625); (9.375 : 9.81814697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+    <associationConnector edgePoints="[(8.75 : 7.94314697265625); (9.5 : 7.94314697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/OVRMSDCDataContext/Role/Role_Employee" />
       <nodes>
         <classShapeMoniker Id="4ff18fd2-3a44-45e0-9ebc-08f53f025dee" />
         <classShapeMoniker Id="29f9a71e-7ae6-4fde-b8e5-4babb86fe620" />
       </nodes>
     </associationConnector>
+    <classShape Id="243efa22-f50a-4a86-8515-6205f54c73d5" absoluteBounds="0.75, 9.75, 2, 4.0785139973958309">
+      <DataClassMoniker Name="/OVRMSDCDataContext/v_Rental" />
+      <nestedChildShapes>
+        <elementListCompartment Id="877c6f7e-368c-4eb8-a827-f4824f3deee3" absoluteBounds="0.76499999999999968, 10.21, 1.9700000000000002, 3.518513997395833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="51b11f2a-60d3-4193-b867-426844a3448e" absoluteBounds="1.125, 0.75, 2, 3.6939111328124996">
+      <DataClassMoniker Name="/OVRMSDCDataContext/v_Vehicle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9d664547-9d9e-4565-bb4e-4bb42a78a06e" absoluteBounds="1.1399999999999997, 1.21, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
   </nestedChildShapes>
 </ordesignerObjectsDiagram>

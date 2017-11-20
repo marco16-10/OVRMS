@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.toolStrip = new System.Windows.Forms.ToolStrip();
+            this.mainToolStrip = new System.Windows.Forms.ToolStrip();
             this.toolStripLabel1 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.rentalToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.customerToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.vehicleToolStripButton = new System.Windows.Forms.ToolStripButton();
             this.employeeToolStripButton = new System.Windows.Forms.ToolStripButton();
@@ -49,41 +50,42 @@
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.windowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStrip.SuspendLayout();
+            this.mainToolStrip.SuspendLayout();
             this.statusStrip.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // toolStrip
+            // mainToolStrip
             // 
-            this.toolStrip.AllowDrop = true;
-            this.toolStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(124)))));
-            this.toolStrip.Dock = System.Windows.Forms.DockStyle.Left;
-            this.toolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
-            this.toolStrip.ImageScalingSize = new System.Drawing.Size(80, 80);
-            this.toolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mainToolStrip.AllowDrop = true;
+            this.mainToolStrip.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(84)))), ((int)(((byte)(124)))));
+            this.mainToolStrip.Dock = System.Windows.Forms.DockStyle.Left;
+            this.mainToolStrip.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
+            this.mainToolStrip.ImageScalingSize = new System.Drawing.Size(80, 80);
+            this.mainToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripLabel1,
             this.toolStripSeparator1,
+            this.rentalToolStripButton,
             this.customerToolStripButton,
             this.vehicleToolStripButton,
             this.employeeToolStripButton,
             this.reportToolStripButton,
             this.tableToolStripButton});
-            this.toolStrip.Location = new System.Drawing.Point(0, 33);
-            this.toolStrip.Name = "toolStrip";
-            this.toolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.toolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip.Size = new System.Drawing.Size(84, 761);
-            this.toolStrip.TabIndex = 1;
-            this.toolStrip.Text = "ToolStrip";
+            this.mainToolStrip.Location = new System.Drawing.Point(0, 33);
+            this.mainToolStrip.Name = "mainToolStrip";
+            this.mainToolStrip.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.mainToolStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
+            this.mainToolStrip.Size = new System.Drawing.Size(88, 761);
+            this.mainToolStrip.TabIndex = 1;
+            this.mainToolStrip.Text = "ToolStrip";
             // 
             // toolStripLabel1
             // 
             this.toolStripLabel1.AutoSize = false;
             this.toolStripLabel1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripLabel1.Image = global::OVRMS.Properties.Resources.CarRentalLogo;
-            this.toolStripLabel1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.toolStripLabel1.Margin = new System.Windows.Forms.Padding(0);
+            this.toolStripLabel1.Image = global::OVRMS.Properties.Resources.CarRentalLogo2;
+            this.toolStripLabel1.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.toolStripLabel1.Margin = new System.Windows.Forms.Padding(3, 5, 1, 1);
             this.toolStripLabel1.Name = "toolStripLabel1";
             this.toolStripLabel1.Size = new System.Drawing.Size(82, 25);
             this.toolStripLabel1.Text = "toolStripLabel1";
@@ -95,10 +97,26 @@
             this.toolStripSeparator1.Name = "toolStripSeparator1";
             this.toolStripSeparator1.Size = new System.Drawing.Size(79, 10);
             // 
+            // rentalToolStripButton
+            // 
+            this.rentalToolStripButton.AutoSize = false;
+            this.rentalToolStripButton.BackColor = System.Drawing.Color.Transparent;
+            this.rentalToolStripButton.CheckOnClick = true;
+            this.rentalToolStripButton.ForeColor = System.Drawing.Color.White;
+            this.rentalToolStripButton.Image = global::OVRMS.Properties.Resources.Rentals103;
+            this.rentalToolStripButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.rentalToolStripButton.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.rentalToolStripButton.Margin = new System.Windows.Forms.Padding(1);
+            this.rentalToolStripButton.Name = "rentalToolStripButton";
+            this.rentalToolStripButton.Size = new System.Drawing.Size(80, 80);
+            this.rentalToolStripButton.Text = "Rentals";
+            this.rentalToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            // 
             // customerToolStripButton
             // 
             this.customerToolStripButton.AutoSize = false;
-            this.customerToolStripButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(84)))), ((int)(((byte)(158)))), ((int)(((byte)(57)))));
+            this.customerToolStripButton.BackColor = System.Drawing.Color.Transparent;
+            this.customerToolStripButton.CheckOnClick = true;
             this.customerToolStripButton.ForeColor = System.Drawing.Color.White;
             this.customerToolStripButton.Image = global::OVRMS.Properties.Resources.Customers;
             this.customerToolStripButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -114,7 +132,8 @@
             // vehicleToolStripButton
             // 
             this.vehicleToolStripButton.AutoSize = false;
-            this.vehicleToolStripButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(184)))), ((int)(((byte)(51)))));
+            this.vehicleToolStripButton.BackColor = System.Drawing.Color.Transparent;
+            this.vehicleToolStripButton.CheckOnClick = true;
             this.vehicleToolStripButton.ForeColor = System.Drawing.Color.White;
             this.vehicleToolStripButton.Image = global::OVRMS.Properties.Resources.Vehicles;
             this.vehicleToolStripButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -125,11 +144,13 @@
             this.vehicleToolStripButton.Text = "Vehicles";
             this.vehicleToolStripButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.vehicleToolStripButton.ToolTipText = "Vehicles";
+            this.vehicleToolStripButton.Click += new System.EventHandler(this.vehicleToolStripButton_Click);
             // 
             // employeeToolStripButton
             // 
             this.employeeToolStripButton.AutoSize = false;
-            this.employeeToolStripButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(207)))), ((int)(((byte)(58)))));
+            this.employeeToolStripButton.BackColor = System.Drawing.Color.Transparent;
+            this.employeeToolStripButton.CheckOnClick = true;
             this.employeeToolStripButton.ForeColor = System.Drawing.Color.White;
             this.employeeToolStripButton.Image = global::OVRMS.Properties.Resources.Employees;
             this.employeeToolStripButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
@@ -145,7 +166,7 @@
             // reportToolStripButton
             // 
             this.reportToolStripButton.AutoSize = false;
-            this.reportToolStripButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(150)))), ((int)(((byte)(118)))));
+            this.reportToolStripButton.BackColor = System.Drawing.Color.Transparent;
             this.reportToolStripButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.invoiceStripMenuItem,
             this.rentalHystoryToolStripMenuItem,
@@ -163,6 +184,7 @@
             // 
             // invoiceStripMenuItem
             // 
+            this.invoiceStripMenuItem.CheckOnClick = true;
             this.invoiceStripMenuItem.Image = global::OVRMS.Properties.Resources.invoices40;
             this.invoiceStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.invoiceStripMenuItem.Name = "invoiceStripMenuItem";
@@ -173,6 +195,7 @@
             // 
             // rentalHystoryToolStripMenuItem
             // 
+            this.rentalHystoryToolStripMenuItem.CheckOnClick = true;
             this.rentalHystoryToolStripMenuItem.Image = global::OVRMS.Properties.Resources.RentHistory40;
             this.rentalHystoryToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.rentalHystoryToolStripMenuItem.Name = "rentalHystoryToolStripMenuItem";
@@ -182,6 +205,7 @@
             // 
             // payslipsToolStripMenuItem
             // 
+            this.payslipsToolStripMenuItem.CheckOnClick = true;
             this.payslipsToolStripMenuItem.Image = global::OVRMS.Properties.Resources.Payroll40;
             this.payslipsToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.payslipsToolStripMenuItem.Name = "payslipsToolStripMenuItem";
@@ -192,7 +216,7 @@
             // tableToolStripButton
             // 
             this.tableToolStripButton.AutoSize = false;
-            this.tableToolStripButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(74)))), ((int)(((byte)(181)))), ((int)(((byte)(196)))));
+            this.tableToolStripButton.BackColor = System.Drawing.Color.Transparent;
             this.tableToolStripButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.tableToolStripButton.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.employeeTypesToolStripMenuItem,
@@ -229,10 +253,10 @@
             this.statusStrip.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.statusStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel});
-            this.statusStrip.Location = new System.Drawing.Point(84, 764);
+            this.statusStrip.Location = new System.Drawing.Point(88, 764);
             this.statusStrip.Name = "statusStrip";
             this.statusStrip.Padding = new System.Windows.Forms.Padding(2, 0, 21, 0);
-            this.statusStrip.Size = new System.Drawing.Size(1394, 30);
+            this.statusStrip.Size = new System.Drawing.Size(1390, 30);
             this.statusStrip.TabIndex = 2;
             this.statusStrip.Text = "StatusStrip";
             // 
@@ -251,6 +275,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.MdiWindowListItem = this.windowToolStripMenuItem;
             this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
             this.menuStrip1.Size = new System.Drawing.Size(1478, 33);
             this.menuStrip1.TabIndex = 4;
             this.menuStrip1.Text = "menuStrip1";
@@ -280,7 +305,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1478, 794);
             this.Controls.Add(this.statusStrip);
-            this.Controls.Add(this.toolStrip);
+            this.Controls.Add(this.mainToolStrip);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -289,8 +314,8 @@
             this.Text = "MDIForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.MDIForm_Load);
-            this.toolStrip.ResumeLayout(false);
-            this.toolStrip.PerformLayout();
+            this.mainToolStrip.ResumeLayout(false);
+            this.mainToolStrip.PerformLayout();
             this.statusStrip.ResumeLayout(false);
             this.statusStrip.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
@@ -301,7 +326,7 @@
         }
         #endregion
 
-        private System.Windows.Forms.ToolStrip toolStrip;
+        private System.Windows.Forms.ToolStrip mainToolStrip;
         private System.Windows.Forms.StatusStrip statusStrip;
         private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel;
         private System.Windows.Forms.ToolStripButton customerToolStripButton;
@@ -321,5 +346,6 @@
         private System.Windows.Forms.ToolStripDropDownButton tableToolStripButton;
         private System.Windows.Forms.ToolStripMenuItem employeeTypesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem employeeStatusToolStripMenuItem;
+        private System.Windows.Forms.ToolStripButton rentalToolStripButton;
     }
 }

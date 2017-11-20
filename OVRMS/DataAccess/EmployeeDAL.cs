@@ -20,10 +20,22 @@ namespace OVRMS.DAL
 
         public void updateItem(Employee p)
         {
-            Employee pt = getItem(p.IdEmp);
-            pt.FirstName = p.FirstName;
-            pt.LastName = p.LastName;
-            pt.Address = p.Address;
+            Employee emp = getItem(p.IdEmp);
+            emp.FirstName = p.FirstName;
+            emp.LastName = p.LastName;
+            emp.IdRole = p.IdRole;
+            emp.Address = p.Address;
+            emp.DateofHire = p.DateofHire;
+            emp.EmploymentType = p.EmploymentType;
+            emp.Gender = p.Gender;
+            emp.HourlyWage = p.HourlyWage;
+            emp.Password = p.Password;
+            emp.Qualification = p.Qualification;
+            emp.TaxCode = p.TaxCode;
+            emp.IsKiwiSaver = p.IsKiwiSaver;
+            emp.KiwiSaverContrRate = p.KiwiSaverContrRate;
+            emp.EmployerContrRate = p.EmployerContrRate;
+            emp.Notes = p.Notes;
             db.SubmitChanges();
         }
 

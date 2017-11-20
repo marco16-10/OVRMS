@@ -149,6 +149,22 @@ namespace OVRMS
 				return this.GetTable<Employee>();
 			}
 		}
+		
+		public System.Data.Linq.Table<v_Rental> v_Rentals
+		{
+			get
+			{
+				return this.GetTable<v_Rental>();
+			}
+		}
+		
+		public System.Data.Linq.Table<v_Vehicle> v_Vehicles
+		{
+			get
+			{
+				return this.GetTable<v_Vehicle>();
+			}
+		}
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.VehicleCategory")]
@@ -163,6 +179,8 @@ namespace OVRMS
 		
 		private System.Nullable<decimal> _DailyRate;
 		
+		private string _Description;
+		
 		private EntitySet<Vehicle> _Vehicles;
 		
     #region Extensibility Method Definitions
@@ -175,6 +193,8 @@ namespace OVRMS
     partial void OnNameChanged();
     partial void OnDailyRateChanging(System.Nullable<decimal> value);
     partial void OnDailyRateChanged();
+    partial void OnDescriptionChanging(string value);
+    partial void OnDescriptionChanged();
     #endregion
 		
 		public VehicleCategory()
@@ -203,7 +223,7 @@ namespace OVRMS
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="VarChar(50)")]
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Name", DbType="VarChar(100)")]
 		public string Name
 		{
 			get
@@ -239,6 +259,26 @@ namespace OVRMS
 					this._DailyRate = value;
 					this.SendPropertyChanged("DailyRate");
 					this.OnDailyRateChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="VarChar(MAX)")]
+		public string Description
+		{
+			get
+			{
+				return this._Description;
+			}
+			set
+			{
+				if ((this._Description != value))
+				{
+					this.OnDescriptionChanging(value);
+					this.SendPropertyChanging();
+					this._Description = value;
+					this.SendPropertyChanged("Description");
+					this.OnDescriptionChanged();
 				}
 			}
 		}
@@ -1061,7 +1101,7 @@ namespace OVRMS
 		
 		private System.Nullable<System.DateTime> _RentalExpStartDate;
 		
-		private System.Nullable<System.DateTime> _RentalEndStartDate;
+		private System.Nullable<System.DateTime> _RentalExpEndtDate;
 		
 		private System.Nullable<System.DateTime> _RentalActStartDate;
 		
@@ -1099,8 +1139,8 @@ namespace OVRMS
     partial void OnIdVehicleChanged();
     partial void OnRentalExpStartDateChanging(System.Nullable<System.DateTime> value);
     partial void OnRentalExpStartDateChanged();
-    partial void OnRentalEndStartDateChanging(System.Nullable<System.DateTime> value);
-    partial void OnRentalEndStartDateChanged();
+    partial void OnRentalExpEndtDateChanging(System.Nullable<System.DateTime> value);
+    partial void OnRentalExpEndtDateChanged();
     partial void OnRentalActStartDateChanging(System.Nullable<System.DateTime> value);
     partial void OnRentalActStartDateChanged();
     partial void OnRentalActEndDateChanging(System.Nullable<System.DateTime> value);
@@ -1217,22 +1257,22 @@ namespace OVRMS
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RentalEndStartDate", DbType="DateTime")]
-		public System.Nullable<System.DateTime> RentalEndStartDate
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RentalExpEndtDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> RentalExpEndtDate
 		{
 			get
 			{
-				return this._RentalEndStartDate;
+				return this._RentalExpEndtDate;
 			}
 			set
 			{
-				if ((this._RentalEndStartDate != value))
+				if ((this._RentalExpEndtDate != value))
 				{
-					this.OnRentalEndStartDateChanging(value);
+					this.OnRentalExpEndtDateChanging(value);
 					this.SendPropertyChanging();
-					this._RentalEndStartDate = value;
-					this.SendPropertyChanged("RentalEndStartDate");
-					this.OnRentalEndStartDateChanged();
+					this._RentalExpEndtDate = value;
+					this.SendPropertyChanged("RentalExpEndtDate");
+					this.OnRentalExpEndtDateChanged();
 				}
 			}
 		}
@@ -1685,7 +1725,7 @@ namespace OVRMS
 		
 		private string _RegistrationNo;
 		
-		private System.Nullable<char> _Status;
+		private string _Status;
 		
 		private string _Color;
 		
@@ -1696,6 +1736,8 @@ namespace OVRMS
 		private string _Year;
 		
 		private string _Notes;
+		
+		private string _ImageFilePath;
 		
 		private EntitySet<Rental> _Rentals;
 		
@@ -1715,7 +1757,7 @@ namespace OVRMS
     partial void OnModelChanged();
     partial void OnRegistrationNoChanging(string value);
     partial void OnRegistrationNoChanged();
-    partial void OnStatusChanging(System.Nullable<char> value);
+    partial void OnStatusChanging(string value);
     partial void OnStatusChanged();
     partial void OnColorChanging(string value);
     partial void OnColorChanged();
@@ -1727,6 +1769,8 @@ namespace OVRMS
     partial void OnYearChanged();
     partial void OnNotesChanging(string value);
     partial void OnNotesChanged();
+    partial void OnImageFilePathChanging(string value);
+    partial void OnImageFilePathChanged();
     #endregion
 		
 		public Vehicle()
@@ -1840,8 +1884,8 @@ namespace OVRMS
 			}
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="NChar(1)")]
-		public System.Nullable<char> Status
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType="VarChar(50)")]
+		public string Status
 		{
 			get
 			{
@@ -1956,6 +2000,26 @@ namespace OVRMS
 					this._Notes = value;
 					this.SendPropertyChanged("Notes");
 					this.OnNotesChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ImageFilePath", DbType="VarChar(MAX)")]
+		public string ImageFilePath
+		{
+			get
+			{
+				return this._ImageFilePath;
+			}
+			set
+			{
+				if ((this._ImageFilePath != value))
+				{
+					this.OnImageFilePathChanging(value);
+					this.SendPropertyChanging();
+					this._ImageFilePath = value;
+					this.SendPropertyChanged("ImageFilePath");
+					this.OnImageFilePathChanged();
 				}
 			}
 		}
@@ -2834,6 +2898,600 @@ namespace OVRMS
 		{
 			this.SendPropertyChanging();
 			entity.Employee = null;
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.v_Rentals")]
+	public partial class v_Rental
+	{
+		
+		private int _IdRental;
+		
+		private System.Nullable<int> _IdCustomer;
+		
+		private System.Nullable<int> _IdVehicle;
+		
+		private System.Nullable<System.DateTime> _RentalExpStartDate;
+		
+		private System.Nullable<System.DateTime> _RentalExpEndtDate;
+		
+		private System.Nullable<System.DateTime> _RentalActStartDate;
+		
+		private System.Nullable<System.DateTime> _RentalActEndDate;
+		
+		private System.Nullable<decimal> _DamagesPenalty;
+		
+		private System.Nullable<decimal> _LowFuelPenalty;
+		
+		private System.Nullable<decimal> _RoadOffencePenalty;
+		
+		private System.Nullable<decimal> _LateReturnPenalty;
+		
+		private System.Nullable<int> _NumberOfKm;
+		
+		private System.Nullable<int> _NumberOfDays;
+		
+		private string _Notes;
+		
+		private string _ModelManufacturer;
+		
+		private string _Category;
+		
+		private System.Nullable<decimal> _DailyRate;
+		
+		public v_Rental()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdRental", DbType="Int NOT NULL")]
+		public int IdRental
+		{
+			get
+			{
+				return this._IdRental;
+			}
+			set
+			{
+				if ((this._IdRental != value))
+				{
+					this._IdRental = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdCustomer", DbType="Int")]
+		public System.Nullable<int> IdCustomer
+		{
+			get
+			{
+				return this._IdCustomer;
+			}
+			set
+			{
+				if ((this._IdCustomer != value))
+				{
+					this._IdCustomer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdVehicle", DbType="Int")]
+		public System.Nullable<int> IdVehicle
+		{
+			get
+			{
+				return this._IdVehicle;
+			}
+			set
+			{
+				if ((this._IdVehicle != value))
+				{
+					this._IdVehicle = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RentalExpStartDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> RentalExpStartDate
+		{
+			get
+			{
+				return this._RentalExpStartDate;
+			}
+			set
+			{
+				if ((this._RentalExpStartDate != value))
+				{
+					this._RentalExpStartDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RentalExpEndtDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> RentalExpEndtDate
+		{
+			get
+			{
+				return this._RentalExpEndtDate;
+			}
+			set
+			{
+				if ((this._RentalExpEndtDate != value))
+				{
+					this._RentalExpEndtDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RentalActStartDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> RentalActStartDate
+		{
+			get
+			{
+				return this._RentalActStartDate;
+			}
+			set
+			{
+				if ((this._RentalActStartDate != value))
+				{
+					this._RentalActStartDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RentalActEndDate", DbType="DateTime")]
+		public System.Nullable<System.DateTime> RentalActEndDate
+		{
+			get
+			{
+				return this._RentalActEndDate;
+			}
+			set
+			{
+				if ((this._RentalActEndDate != value))
+				{
+					this._RentalActEndDate = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DamagesPenalty", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> DamagesPenalty
+		{
+			get
+			{
+				return this._DamagesPenalty;
+			}
+			set
+			{
+				if ((this._DamagesPenalty != value))
+				{
+					this._DamagesPenalty = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LowFuelPenalty", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> LowFuelPenalty
+		{
+			get
+			{
+				return this._LowFuelPenalty;
+			}
+			set
+			{
+				if ((this._LowFuelPenalty != value))
+				{
+					this._LowFuelPenalty = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RoadOffencePenalty", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> RoadOffencePenalty
+		{
+			get
+			{
+				return this._RoadOffencePenalty;
+			}
+			set
+			{
+				if ((this._RoadOffencePenalty != value))
+				{
+					this._RoadOffencePenalty = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_LateReturnPenalty", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> LateReturnPenalty
+		{
+			get
+			{
+				return this._LateReturnPenalty;
+			}
+			set
+			{
+				if ((this._LateReturnPenalty != value))
+				{
+					this._LateReturnPenalty = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NumberOfKm", DbType="Int")]
+		public System.Nullable<int> NumberOfKm
+		{
+			get
+			{
+				return this._NumberOfKm;
+			}
+			set
+			{
+				if ((this._NumberOfKm != value))
+				{
+					this._NumberOfKm = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NumberOfDays", DbType="Int")]
+		public System.Nullable<int> NumberOfDays
+		{
+			get
+			{
+				return this._NumberOfDays;
+			}
+			set
+			{
+				if ((this._NumberOfDays != value))
+				{
+					this._NumberOfDays = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Notes", DbType="VarChar(MAX)")]
+		public string Notes
+		{
+			get
+			{
+				return this._Notes;
+			}
+			set
+			{
+				if ((this._Notes != value))
+				{
+					this._Notes = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ModelManufacturer", DbType="VarChar(103)")]
+		public string ModelManufacturer
+		{
+			get
+			{
+				return this._ModelManufacturer;
+			}
+			set
+			{
+				if ((this._ModelManufacturer != value))
+				{
+					this._ModelManufacturer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Category", DbType="VarChar(50)")]
+		public string Category
+		{
+			get
+			{
+				return this._Category;
+			}
+			set
+			{
+				if ((this._Category != value))
+				{
+					this._Category = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DailyRate", DbType="Money")]
+		public System.Nullable<decimal> DailyRate
+		{
+			get
+			{
+				return this._DailyRate;
+			}
+			set
+			{
+				if ((this._DailyRate != value))
+				{
+					this._DailyRate = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.v_Vehicles")]
+	public partial class v_Vehicle
+	{
+		
+		private int _IdVehicle;
+		
+		private System.Nullable<int> _IdCategory;
+		
+		private string _Manufacturer;
+		
+		private string _Model;
+		
+		private string _RegistrationNo;
+		
+		private string _Status;
+		
+		private string _Color;
+		
+		private string _Description;
+		
+		private System.Nullable<decimal> _Odometer;
+		
+		private string _Year;
+		
+		private string _Notes;
+		
+		private string _ImageFilePath;
+		
+		private string _CategoryName;
+		
+		private string _CategoryDescription;
+		
+		private System.Nullable<decimal> _DailyRate;
+		
+		public v_Vehicle()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdVehicle", DbType="Int NOT NULL")]
+		public int IdVehicle
+		{
+			get
+			{
+				return this._IdVehicle;
+			}
+			set
+			{
+				if ((this._IdVehicle != value))
+				{
+					this._IdVehicle = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_IdCategory", DbType="Int")]
+		public System.Nullable<int> IdCategory
+		{
+			get
+			{
+				return this._IdCategory;
+			}
+			set
+			{
+				if ((this._IdCategory != value))
+				{
+					this._IdCategory = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Manufacturer", DbType="VarChar(50)")]
+		public string Manufacturer
+		{
+			get
+			{
+				return this._Manufacturer;
+			}
+			set
+			{
+				if ((this._Manufacturer != value))
+				{
+					this._Manufacturer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Model", DbType="VarChar(50)")]
+		public string Model
+		{
+			get
+			{
+				return this._Model;
+			}
+			set
+			{
+				if ((this._Model != value))
+				{
+					this._Model = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RegistrationNo", DbType="VarChar(50)")]
+		public string RegistrationNo
+		{
+			get
+			{
+				return this._RegistrationNo;
+			}
+			set
+			{
+				if ((this._RegistrationNo != value))
+				{
+					this._RegistrationNo = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Status", DbType= "VarChar(50)")]
+		public string Status
+		{
+			get
+			{
+				return this._Status;
+			}
+			set
+			{
+				if ((this._Status != value))
+				{
+					this._Status = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Color", DbType="VarChar(50)")]
+		public string Color
+		{
+			get
+			{
+				return this._Color;
+			}
+			set
+			{
+				if ((this._Color != value))
+				{
+					this._Color = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Description", DbType="VarChar(100)")]
+		public string Description
+		{
+			get
+			{
+				return this._Description;
+			}
+			set
+			{
+				if ((this._Description != value))
+				{
+					this._Description = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Odometer", DbType="Decimal(18,0)")]
+		public System.Nullable<decimal> Odometer
+		{
+			get
+			{
+				return this._Odometer;
+			}
+			set
+			{
+				if ((this._Odometer != value))
+				{
+					this._Odometer = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Year", DbType="NChar(4)")]
+		public string Year
+		{
+			get
+			{
+				return this._Year;
+			}
+			set
+			{
+				if ((this._Year != value))
+				{
+					this._Year = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_Notes", DbType="VarChar(MAX)")]
+		public string Notes
+		{
+			get
+			{
+				return this._Notes;
+			}
+			set
+			{
+				if ((this._Notes != value))
+				{
+					this._Notes = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ImageFilePath", DbType="VarChar(MAX)")]
+		public string ImageFilePath
+		{
+			get
+			{
+				return this._ImageFilePath;
+			}
+			set
+			{
+				if ((this._ImageFilePath != value))
+				{
+					this._ImageFilePath = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CategoryName", DbType="VarChar(100)")]
+		public string CategoryName
+		{
+			get
+			{
+				return this._CategoryName;
+			}
+			set
+			{
+				if ((this._CategoryName != value))
+				{
+					this._CategoryName = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CategoryDescription", DbType="VarChar(MAX)")]
+		public string CategoryDescription
+		{
+			get
+			{
+				return this._CategoryDescription;
+			}
+			set
+			{
+				if ((this._CategoryDescription != value))
+				{
+					this._CategoryDescription = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DailyRate", DbType="Money")]
+		public System.Nullable<decimal> DailyRate
+		{
+			get
+			{
+				return this._DailyRate;
+			}
+			set
+			{
+				if ((this._DailyRate != value))
+				{
+					this._DailyRate = value;
+				}
+			}
 		}
 	}
 }

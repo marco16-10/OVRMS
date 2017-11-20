@@ -26,11 +26,23 @@ namespace OVRMS.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\OVRMS.mdf;Int" +
-            "egrated Security=True;Connect Timeout=30")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Marco\\OneDrive\\Whiti" +
+            "reia\\III Trimeter\\C#\\Assignment 1\\OVRMS\\OVRMS\\OVRMS.mdf;Integrated Security=True" +
+            "")]
         public string OVRMSConnectionString {
             get {
                 return ((string)(this["OVRMSConnectionString"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\\OVRMS.mdf;Int" +
+            "egrated Security=True")]
+        public string OVRMSConnectionString1 {
+            get {
+                return ((string)(this["OVRMSConnectionString1"]));
             }
         }
     }
